@@ -97,12 +97,12 @@ Tablero dinámico con:
 ## 📸 Vista del Dashboard  
 
 ### 🔹 Dashboard Principal  
-![Dashboard Principal]("Adventure Works Cycle/assets/dashboard_principal.png")   
+![Dashboard Principal](assets/dashboard_principal.png)   
 
 ---
 
 📂 También puedes explorar el proyecto completo descargando el archivo:  
-[Descargar AdventureWorks.pbix]("Adventure Works Cycle/assets/Adventure Works Cycle.pbix")  
+[Descargar AdventureWorks.pbix](assets/Adventure_Works_Cycle.pbix)  
 
 
 ## 🔮 Líneas Futuras  
