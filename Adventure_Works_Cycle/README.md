@@ -3,7 +3,7 @@
 💼 **Autor:** Jesús E. Morgan  
 📊 **Data Analyst | SQL · Python · Power BI**  
 📅 **Entrega:** 16/07/2025  
-📂 **Cohorte:** DA-FT16  
+📂 **Cliente:** Henry Bootcamp  
 
 ---
 
