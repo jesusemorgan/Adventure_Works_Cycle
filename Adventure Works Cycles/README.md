@@ -70,7 +70,7 @@ CALCULATE(
   - SUM(FactInternetSales[Freight]),
   DimDate[CalendarYear] = AnioMax
 )
-
+```
 ---
 
 ### 4️⃣ Creación del Tablero  
