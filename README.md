@@ -1,7 +1,7 @@
 # 🚴‍♂️ Power BI Project – Adventure Works Cycle  
 
 💼 **Author:** Jesús E. Morgan  
-📊 **Data Analyst | SQL · Python · Power BI**  
+📊 **Data Analyst | SQL · Power BI**  
 📅 **Delivery Date:** 16/07/2025  
 📂 **Client:** Henry Bootcamp  
 
@@ -124,7 +124,7 @@ This project allowed me to strengthen:
 # 🚴‍♂️ Proyecto Power BI – Adventure Works Cycle  
 
 💼 **Autor:** Jesús E. Morgan  
-📊 **Data Analyst | SQL · Python · Power BI**  
+📊 **Data Analyst | SQL · Power BI**  
 📅 **Entrega:** 16/07/2025  
 📂 **Cliente:** Henry Bootcamp  
 
