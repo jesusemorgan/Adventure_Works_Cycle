@@ -1,3 +1,126 @@
+# 🚴‍♂️ Power BI Project – Adventure Works Cycle  
+
+💼 **Author:** Jesús E. Morgan  
+📊 **Data Analyst | SQL · Python · Power BI**  
+📅 **Delivery Date:** 16/07/2025  
+📂 **Client:** Henry Bootcamp  
+
+---
+
+## 📖 Introduction  
+Adventure Works Cycles (AWC) is a multinational manufacturing company that produces and distributes bicycles, parts, and accessories across North America, Europe, and Asia.  
+
+The goal of this project was to systematically analyze **sales data**, identify areas for improvement, and design a **Power BI dashboard** to provide actionable business insights.  
+
+### Main Objectives:  
+- 🧹 Improve **data quality** through cleaning and preprocessing.  
+- 🔗 Build a **relational data model** aligned with business needs.  
+- 🧮 Implement **DAX measures** for key metrics.  
+- 🎨 Design **intuitive and visually appealing dashboards** for decision-making.  
+
+---
+
+## 🛠️ Technologies & Tools  
+
+**Business Intelligence**  
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)   ![Power Query](https://img.shields.io/badge/Power_Query-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)  
+
+**Databases**  
+![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)   ![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)  
+
+**DAX Language**  
+![DAX](https://img.shields.io/badge/DAX-4479A1?style=for-the-badge&logo=data&logoColor=white)  
+
+---
+
+## 🔧 Project Development  
+
+### 1️⃣ Data Connection and Cleaning  
+- Restored **AdventureWorksDW2019** in SQL Server.  
+- Connected Power BI to tables such as `DimProduct`, `DimDate`, `DimPromotion`, `FactInternetSales`, among others.  
+- Data cleaning with **Power Query**:  
+  - Adjusted data types.  
+  - Removed unnecessary columns and those with >90% null values.  
+- Integrated **DimCustomer** table from Excel.  
+- Combined tables:  
+  - `Customer + Geography` → to include city, province, and postal code.  
+  - `Product + Category + Subcategory` → to classify products.  
+
+### 2️⃣ Relational Model and Mockup  
+- Built a **star schema model**.  
+- Designed an **initial mockup** to guide the dashboard.  
+
+### 3️⃣ Key DAX Measures  
+- **Revenue, Costs, Gross Profit, Net Profit.**  
+- **Year-over-Year (YoY) KPIs.**  
+- **Ratios:** COGS, Gross Margin, Net Margin.  
+- **Cumulative and comparative calculations.**  
+
+Example measures:  
+```DAX
+TotalRevenue = SUM(FactInternetSales[SalesAmount])
+
+NetProfit = 
+VAR MaxYear = YEAR(MAX(FactInternetSales[OrderDate]))
+RETURN
+CALCULATE(
+    SUM(FactInternetSales[SalesAmount]) 
+  - SUM(FactInternetSales[TotalProductCost]) 
+  - SUM(FactInternetSales[TaxAmt]) 
+  - SUM(FactInternetSales[Freight]),
+  DimDate[CalendarYear] = MaxYear
+)
+```
+---
+
+### 4️⃣ Dashboard Creation  
+- Added **parameters**: Revenue, Net Profit, Gross Profit, COGS, % Margin.  
+- Implemented a **Calculation Group** called *Time Intelligence*.  
+- **Navigation buttons** between pages.  
+- Tooltip functionality.  
+
+---
+
+## 📊 Main Results  
+Dynamic dashboard including:  
+- Revenue, Costs, Gross Profit, and Net Profit.  
+- Slicers by Year, Country, and Category.  
+- Year-over-Year (**YoY**) comparisons.  
+- Organized documentation of measures and folders.  
+
+👉 The final dashboard facilitates **profitability exploration** and **sales trend analysis**.  
+
+---
+
+## 📸 Dashboard View  
+
+### 🔹 Main Dashboard  
+![Main Dashboard](assets/dashboard_principal.png)   
+
+---
+
+📂 You can also explore the complete project by downloading the file:  
+[Download AdventureWorks.pbix](assets/Adventure_Works_Cycle.pbix)  
+
+---
+
+## 🔮 Future Enhancements  
+- Expand DAX measures for new KPIs.  
+- Deepen analysis by **territory and promotions**.  
+- Explore integration with **real-time data**.  
+
+---
+
+## 💡 Personal Reflection  
+This project allowed me to strengthen:  
+- Accuracy and attention to detail in data cleaning.  
+- Building a robust relational model.  
+- Designing professional dashboards in Power BI.  
+
+---
+
+---
+
 # 🚴‍♂️ Proyecto Power BI – Adventure Works Cycle  
 
 💼 **Autor:** Jesús E. Morgan  
